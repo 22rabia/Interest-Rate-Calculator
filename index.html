@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interest Rate Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="favicon.ico">
+    <link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="icon" href="android-chrome-192x192.png" sizes="16x16" type="image/png">
+<link rel="icon" href="android-chrome-512x512.png" sizes="16x16" type="image/png">
+<link rel="icon" href="apple-touch-icon.png" sizes="16x16" type="image/png">
+</head>
+<body>
+<div id="main">
+    <h1>Interest Rate Calculator</h1>
+    
+    <form>
+        <p>Enter the following information:</p>
+        <label for="principal">Principal Amount ($):</label>
+        <input type="number" id="principal" placeholder="Enter principal amount" step="any" required><br><br>
+
+        <label for="rate">Interest Rate (% per annum):</label>
+        <input type="number" id="rate" placeholder="Enter interest rate" step="any" required><br><br>
+
+        <label for="time">Time (years):</label>
+        <input type="number" id="time" placeholder="Enter time in years" step="any" required><br><br>
+
+        <input type="button" value="Calculate " onclick="calculateInterest()"><br><br>
+    
+        <div id="result">
+            <p id="principal-display">Principal Amount : </p>
+            <p id="interest-display">Interest : </p>
+            <p id="total-amount-display">Total Amount : </p>
+        </div>
+    </form>
+    
+
+</div>
+<script src="index.js">
+</script>
+</body>
+</html>
